@@ -7,3 +7,5 @@ apple and android push notification service
 This is a div wrapping some Markdown plus.  Without the DIV attribute, it ignores the
 block.
 </div>
+
+|  Cell  |  Cell  |   $10  |
