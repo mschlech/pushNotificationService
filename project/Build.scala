@@ -6,7 +6,7 @@ object Build extends Build {
 
 
   lazy val PPNSKernelBuild = Project(
-    "plot-pushNotificationServiceKernel",
+    "pushNotificationServiceKernel",
     file ("."),
     settings = basicSettings ++ Seq(
       libraryDependencies ++= Seq(
@@ -28,7 +28,7 @@ object Build extends Build {
   )
 
 //  lazy val buildSettings = Defaults.defaultSettings ++ Seq(
-//    organization := "com.plotproject",
+//    organization := "com.entscheidungsbaum",
 //    version := "0.1beta",
 //    scalaVersion := "2.9.1",
 //    crossPaths := false,
@@ -47,7 +47,7 @@ object Build extends Build {
 
   lazy val basicSettings = Defaults.defaultSettings ++
     Seq(
-      organization := "com.plotprojects",
+      organization := "com.entscheidungsbaum",
       version := "0.1-SNAPSHOT",
       scalaVersion := "2.9.1",
       scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-Xmax-classfile-name", "128"),
