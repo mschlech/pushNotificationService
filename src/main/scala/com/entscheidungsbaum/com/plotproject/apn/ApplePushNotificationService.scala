@@ -1,9 +1,9 @@
 package com.plotprojects.com.plotproject.apn
 
-/*
- * Copyright (c) 2012 by Floating Market BV. Alle rechten voorbehouden.
- * author: marcus@plotproject.com
-*/
+/**
+ * @author marcus (at) entscheidungsbaum
+ *
+ */
 
 import com.plotprojects.data.PlotPushServiceNotificationDao
 
