@@ -11,6 +11,7 @@ object Build extends Build {
     settings = basicSettings ++ Seq(
       libraryDependencies ++= Seq(
         Compile.akkaActor,
+        Compile.akkaKernel,
         Compile.sprayJson,
         Compile.jodaTime,
         Compile.jodaConvert,
@@ -65,6 +66,7 @@ object Dependencies {
 
 object V {
   val akka = "2.0.2"
+  val akkaKernel = "2.0.2"
   val sprayJson = "1.1.1"
   val specs2 = "1.6.1"
   val slf4j = "1.6.5"
@@ -78,7 +80,7 @@ object V {
 
 object Compile {
  val akkaActor = "com.typesafe.akka" % "akka-actor" % V.akka % "compile" withSources()
- val akkaKernel = "com.typesafe.akka" % "akka-kernel" % V.akka % "compile" withSources()
+ val akkaKernel = "com.typesafe.akka" % "akka-kernel" % V.akkaKernel % "compile" withSources()
  val akkaSbt = "com.typesafe.akka" % "akka-sbt-plugin" % V.akka % "compile" withSources()
  val sprayJson = "cc.spray" %% "spray-json" % V.sprayJson % "compile" withSources()
  val jodaTime = "joda-time" % "joda-time" % V.jodaTime % "compile"
