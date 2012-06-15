@@ -3,16 +3,14 @@
  *
  */
 
-package com.plotprojects
+package com.entscheidungsbaum
 
-import akka.actor.{Actor,ActorSystem,Props}
-import akka.kernel.Bootable
+import akka.actor.{Actor,Props}
 
 
-case object Start
 
 class PushNotificationServiceActor extends Actor {
-                                                                                             A
+
 }
 
 class PushReceiverActor extends Actor {
@@ -39,19 +37,22 @@ class AndroidPushReceiverActor extends Actor {
   
 }
 
-class PushNotificationServiceKernel extends Bootable {
+
+import akka.kernel.Bootable
+
+class PushNotificationServiceKernel { // extends Bootable {
 
   val system = {
 
-    case message : String => sender ! (message.toUpperCase + "plot test" )
+   // case message : String => sender ! (message.toUpperCase + "push test" )
   }
 
   def startup = {
-    system.actorOf(Props[PushReceiver]) ! Start
+   // system.actorOf(Props[PushReceiver]) ! Start
   }
 
   def shutdown = {
-    system.shutdown()
+    //system.shutdown()
   }
 
 }

@@ -1,12 +1,15 @@
 package com.entscheidungsbaum
 
+import _root_.com.entscheidungsbaum.data.PushServiceNotificationDao
+import akka.actor.Actor
+import data.PushServiceNotificationDao
+import akka.event.Logging
+
 /**
- * com.entscheidungsbaum
- * marcus
- * Author Marcus Schlechter
- * 6/6/12
+ *
+ * @param psnd
  */
-class PushReceiver (psnd: PushServiceNotificationDao) extends Actor {
+class PushReceiver(psnd: PushServiceNotificationDao) extends Actor {
 
   val logger = Logging(context.system, this)
 
@@ -51,16 +54,3 @@ class PushReceiver (psnd: PushServiceNotificationDao) extends Actor {
 //sealed trait PushMessages {
 //  case ApplePush
 //}
-{
-
-import akka.event.Logging
-
-import akka.event.Logging
-
-import akka.event.Logging
-
-import akka.event.Logging._
-import akka.actor.Actor
-import _root_.com.plotprojects.data.PushServiceNotificationDao
-
-}
