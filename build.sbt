@@ -14,9 +14,9 @@ resolvers ++=
 
 libraryDependencies += "com.typesafe.akka" %  "akka-actor" % "2.0.2" % "compile" withSources() 
 
-libraryDependencies += "com.typesafe.akka" %  "akka-kernel"   % "2.0.2-RC1" % "compile" withSources()
-
 libraryDependencies += "com.typesafe.akka" %  "akka-remote"   % "2.0.2" % "compile" withSources()
+
+libraryDependencies += "com.typesafe.akka" %  "akka-kernel"   % "2.0" % "compile" withSources()
 
 libraryDependencies += "org.apache.httpcomponents" %  "httpClient" % "4.1.2" 
 
