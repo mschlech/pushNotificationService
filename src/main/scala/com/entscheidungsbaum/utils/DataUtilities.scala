@@ -3,6 +3,7 @@ package com.entscheidungsbaum.utils
 import java.io._
 import java.util.{Date, HashMap}
 
+import java.lang.Integer
 
 /**
  * com.entscheidungsbaum.utils
